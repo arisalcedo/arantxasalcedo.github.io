@@ -1,15 +1,44 @@
-/* Importar Kollektif usando @font-face */
-@font-face {
-  font-family: 'Kollektif';
-  src: url('fonts/Kollektif.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+/* Estilo para el contenedor principal */
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-/* Aplicar League Gothic a los títulos y subtítulos */
+/* Columnas para distribuir el contenido */
+.column {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Estilo específico para cada columna */
+.left-column {
+  text-align: left;
+}
+
+.right-column {
+  text-align: right;
+}
+
+/* Foto de perfil */
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: block;
+  margin-bottom: 20px;
+}
+
+/* Aplicar la fuente League Gothic a los títulos y subtítulos en mayúsculas */
 h1, h2, h3 {
   font-family: 'League Gothic', sans-serif;
   letter-spacing: 0.5px;
+  text-transform: uppercase; /* Mayúsculas */
 }
 
 /* Aplicar Kollektif al cuerpo de texto y subtítulos secundarios */
@@ -29,6 +58,11 @@ h2 {
   margin-bottom: 15px;
 }
 
+h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
 .chart-container {
   width: 300px;
   margin: 0 auto;
@@ -44,6 +78,13 @@ h2 {
   margin-top: 20px;
 }
 
-.contact-info h3 {
-  margin-bottom: 10px;
+/* Hacer que el diseño sea responsive */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .right-column, .left-column {
+    text-align: center;
+  }
 }
