@@ -1,31 +1,24 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  margin: 0;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  text-align: center;
+/* Aplicar la fuente League Gothic a los títulos y subtítulos */
+h1, h2, h3 {
+  font-family: 'League Gothic', sans-serif;
+  letter-spacing: 0.5px;
 }
 
-.container {
-  background-color: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 400px;
+/* Aplicar Kollektif al cuerpo de texto y subtítulos secundarios */
+body, p, .contact-info p {
+  font-family: 'Kollektif', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 h1 {
-  font-size: 24px;
-  margin-bottom: 5px;
+  font-size: 32px;
+  margin-bottom: 10px;
 }
 
 h2 {
-  font-size: 18px;
-  margin-bottom: 20px;
+  font-size: 24px;
+  margin-bottom: 15px;
 }
 
 .chart-container {
