@@ -8,11 +8,11 @@ const skillsChart = new Chart(ctx, {
             label: 'Habilidades Técnicas',
             data: [25, 25, 20, 20, 10],
             backgroundColor: [
-                '#ff6384',
-                '#36a2eb',
-                '#ffcd56',
-                '#4bc0c0',
-                '#9966ff'
+                '#774a5c',
+                '#a17073',
+                '#43597a',
+                '#1f0f2c',
+                '#4b2a44'
             ]
         }]
     },
