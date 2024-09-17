@@ -1,13 +1,26 @@
+/* Fondo de formas curvas coloridas */
+.background-curves {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: linear-gradient(135deg, #f2d4bc 25%, #f5f5ef 25%, #f5f5ef 50%, #c4d6b7 50%, #c4d6b7 75%, #f2d4bc 75%);
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+}
+
 /* Estilo para el contenedor principal */
 .container {
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.8);
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 50px auto;
+  position: relative;
 }
 
 /* Columnas para distribuir el contenido */
@@ -25,7 +38,7 @@
   text-align: right;
 }
 
-/* Estilo para el contenedor de la foto de perfil */
+/* Fondo circular para la foto */
 .profile-photo-container {
   width: 160px;
   height: 160px;
@@ -37,7 +50,6 @@
   margin-bottom: 20px;
 }
 
-/* Estilo para la foto dentro del contenedor circular */
 .profile-photo {
   width: 140px;
   height: 140px;
@@ -45,11 +57,27 @@
   object-fit: cover;
 }
 
-/* Aplicar la fuente League Gothic a los títulos y subtítulos en mayúsculas */
+/* Títulos y subtítulos en mayúsculas */
 h1, h2, h3 {
   font-family: 'League Gothic', sans-serif;
   letter-spacing: 0.5px;
-  text-transform: uppercase; /* Mayúsculas */
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #c7998c; /* Color personalizado para "Data Analyst" */
+}
+
+h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
 /* Aplicar Kollektif al cuerpo de texto y subtítulos secundarios */
@@ -57,21 +85,6 @@ body, p, .contact-info p {
   font-family: 'Kollektif', sans-serif;
   font-size: 16px;
   line-height: 1.6;
-}
-
-h1 {
-  font-size: 50px;
-  margin-bottom: 10px;
-}
-
-h2 {
-  font-size: 24px;
-  margin-bottom: 15px;
-}
-
-h3 {
-  font-size: 18px;
-  margin-bottom: 10px;
 }
 
 .chart-container {
@@ -89,7 +102,6 @@ h3 {
   margin-top: 20px;
 }
 
-/* Hacer que el diseño sea responsive */
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
