@@ -25,13 +25,24 @@
   text-align: right;
 }
 
-/* Foto de perfil */
-.profile-photo {
-  width: 150px;
-  height: 150px;
+/* Estilo para el contenedor de la foto de perfil */
+.profile-photo-container {
+  width: 160px;
+  height: 160px;
+  background-color: #91eee1;
   border-radius: 50%;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 20px;
+}
+
+/* Estilo para la foto dentro del contenedor circular */
+.profile-photo {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 /* Aplicar la fuente League Gothic a los títulos y subtítulos en mayúsculas */
