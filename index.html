@@ -6,41 +6,54 @@
   <title>CV - Arantxa Salcedo Ferraggine</title>
   <!-- Importación de League Gothic desde Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
-  <!-- Importación de Kollektif (si tienes el archivo, puedes usar @font-face) -->
+  <!-- Importación de Kollektif desde archivo .ttf -->
   <style>
     @font-face {
-  font-family: 'Kollektif';
-  src: url('fonts/Kollektif.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
+      font-family: 'Kollektif';
+      src: url('fonts/Kollektif.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
   </style>
   <link rel="stylesheet" href="style.css">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
   <div class="container">
-    <h1>Arantxa Salcedo Ferraggine</h1>
-    <h2>Data Analyst</h2>
-    <p>Analista de datos con experiencia en distintos roles. Disfruto de ser creativa en los procesos y actualmente estoy uniendo Business + IT.</p>
+    <!-- Columna izquierda: foto, subtítulo "Sobre Mí", texto y gráfico de habilidades -->
+    <div class="column left-column">
+      <!-- Foto -->
+      <img src="tu-foto.jpg" alt="Foto de Arantxa" class="profile-photo">
+      
+      <!-- Subtítulo "Sobre Mí" y texto -->
+      <h3>SOBRE MÍ</h3>
+      <p> Soy analista de datos desde hace mucho tiempo, es algo que naturalmente he implementado en los distintos roles que he ocupado. 
+          Disfruto del cambio y trato de ser creativa en mis procesos.
+          Actualmente estoy tratando de unir business + IT, estoy capacitandome para lograrlo. </p>
 
-    <!-- Gráfico de anillo para las habilidades -->
-    <div class="chart-container">
-      <canvas id="skillsChart"></canvas>
+      <!-- Gráfico de anillo para las habilidades -->
+      <div class="chart-container">
+        <canvas id="skillsChart"></canvas>
+      </div>
+      
+      <!-- Detalles de la habilidad seleccionada -->
+      <div id="skill-details"></div>
     </div>
 
-    <!-- Detalles de la habilidad seleccionada -->
-    <div id="skill-details"></div>
-
-    <!-- Información de contacto -->
-    <div class="contact-info">
-      <h3>Contacto</h3>
-      <p>Tel: (249) 446 4344</p>
-      <p>Email: arantxa.salcedoferraggine@gmail.com</p>
+    <!-- Columna derecha: nombre, puesto y datos de contacto -->
+    <div class="column right-column">
+      <h1>ARANTXA SALCEDO FERRAGGINE</h1>
+      <h2>DATA ANALYST</h2>
+      
+      <!-- Información de contacto -->
+      <div class="contact-info">
+        <h3>CONTACTO</h3>
+        <p>Tel: (249) 446 4344</p>
+        <p>Email: arantxa.salcedoferraggine@gmail.com</p>
+      </div>
     </div>
   </div>
 
   <script src="script.js"></script>
 </body>
 </html>
-
