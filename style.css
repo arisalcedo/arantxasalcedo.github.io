@@ -1,4 +1,12 @@
-/* Aplicar la fuente League Gothic a los títulos y subtítulos */
+/* Importar Kollektif usando @font-face */
+@font-face {
+  font-family: 'Kollektif';
+  src: url('fonts/Kollektif.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Aplicar League Gothic a los títulos y subtítulos */
 h1, h2, h3 {
   font-family: 'League Gothic', sans-serif;
   letter-spacing: 0.5px;
