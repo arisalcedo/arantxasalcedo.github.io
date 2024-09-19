@@ -1,3 +1,11 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(./fonts/Kollektif.ttf);
+}
+p{
+  font-family: myFirstFont;
+}
+
 /* Fondo de formas curvas coloridas */
 .background-curves {
   position: absolute;
