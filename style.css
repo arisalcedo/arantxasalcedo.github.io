@@ -2,9 +2,6 @@
   font-family: myFirstFont;
   src: url(./fonts/Kollektif.ttf);
 }
-p{
-  font-family: myFirstFont;
-}
 
 /* Fondo de formas curvas coloridas */
 .background-curves {
@@ -90,7 +87,7 @@ h3 {
 
 /* Aplicar Kollektif al cuerpo de texto y subtítulos secundarios */
 body, p, .contact-info p {
-  font-family: 'Kollektif', sans-serif;
+  font-family: 'myFirstFont','Kollektif', sans-serif;
   font-size: 16px;
   line-height: 1.6;
 }
