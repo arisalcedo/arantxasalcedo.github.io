@@ -18,18 +18,23 @@ const skillsChart = new Chart(ctx, {
         }]
     },
     options: {
-        responsive: true,
-        maintainAspectRatio: false,
-        onHover: function(event, chartElement) {
-            if (chartElement.length) {
-                const index = chartElement[0].index;
-                const label = skillsChart.data.labels[index];
-                const skillDetails = getSkillDetails(label);
-                document.getElementById('skill-details').innerText = skillDetails;
-            } else {
-                document.getElementById('skill-details').innerText = '';
+        plugins: {
+            legend: {
+                display: false // Deshabilita la leyenda
+            },
+            datalabels: {
+                color: '#ffffff', // Color blanco para las etiquetas
+                formatter: (value, context) => {
+                    return context.chart.data.labels[context.dataIndex]; // Mostrar las etiquetas correspondientes
+                },
+                font: {
+                    weight: 'bold',
+                    size: 14 // Tamaño de letra de las etiquetas
+                }
             }
-        }
+        },
+        responsive: true,
+        maintainAspectRatio: false
     }
 });
 
