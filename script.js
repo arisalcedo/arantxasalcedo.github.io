@@ -3,25 +3,21 @@ const ctx = document.getElementById('skillsChart').getContext('2d');
 const skillsChart = new Chart(ctx, {
     type: 'doughnut',
     data: {
-        labels: ['SQL', 'Power BI', 'Excel', 'Office 365', 'Python'],
+        labels: ['Power BI','SQL','Python','Office 365','ETL','Excel'],
         datasets: [{
             label: 'Habilidades Técnicas',
-            data: [25, 25, 20, 20, 10],
+            data: [45,30,35,20,25,20],
             backgroundColor: [
-                '#774a5c',
                 '#a17073',
-                '#43597a',
+                '#774a5c',
+                '#4b2a44',
                 '#1f0f2c',
-                '#4b2a44'
+                '#313354',
+                '#43597a'
             ]
         }]
     },
     options: {
-        plugins: {
-            legend: {
-                display: false
-            },
-        }
         responsive: true,
         maintainAspectRatio: false,
         onHover: function(event, chartElement) {
