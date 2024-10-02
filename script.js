@@ -16,7 +16,7 @@ const skillsChart = new Chart(ctx, {
                 '#43597a'
             ],
             borderColor: '#ffffff', // Borde blanco entre los sectores
-            borderWidth: 1 // Grosor del borde
+            borderWidth: 0.5 // Grosor del borde
         }]
     },
     options: {
@@ -36,7 +36,13 @@ const skillsChart = new Chart(ctx, {
             }
         },
         responsive: true,
-        maintainAspectRatio: false
+        maintainAspectRatio: false,
+        layout: {
+            padding: {
+                top: 20,
+                bottom: 20
+            }
+        }
     }
 });
 
@@ -47,7 +53,8 @@ function getSkillDetails(label) {
         'Power BI': 'Dashboards interactivos, DAX, y análisis de datos comerciales.',
         'Excel': 'Análisis con tablas dinámicas, Power Query y automatización con macros.',
         'Office 365': 'Implementación y soporte de herramientas colaborativas.',
-        'Python': 'Manipulación de datos con pandas y automatización de tareas simples.'
+        'Python': 'Manipulación de datos con pandas y automatización de tareas simples.',
+        'ETL': 'Extracción, transformación y carga de datos para análisis eficientes.'
     };
     return details[label];
 }
