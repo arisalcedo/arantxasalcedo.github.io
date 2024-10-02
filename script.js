@@ -14,7 +14,9 @@ const skillsChart = new Chart(ctx, {
                 '#1f0f2c',
                 '#313354',
                 '#43597a'
-            ]
+            ],
+            borderColor: '#ffffff', // Borde blanco entre los sectores
+            borderWidth: 2 // Grosor del borde
         }]
     },
     options: {
