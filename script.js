@@ -42,6 +42,16 @@ const skillsChart = new Chart(ctx, {
                 top: 20,
                 bottom: 20
             }
+        },
+        onHover: (event, chartElement) => {
+            if (chartElement.length > 0) {
+                const index = chartElement[0].index; // Obtener el índice del sector que está siendo hovereado
+                const label = skillsChart.data.labels[index]; // Obtener la etiqueta correspondiente
+                const details = getSkillDetails(label); // Obtener los detalles de la habilidad
+                document.getElementById('skill-details').innerHTML = `<strong>${label}</strong>: ${details}`; // Mostrar los detalles
+            } else {
+                document.getElementById('skill-details').innerHTML = ''; // Limpiar los detalles si no hay hover
+            }
         }
     }
 });
