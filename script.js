@@ -5,7 +5,7 @@ const skillsChart = new Chart(ctx, {
     data: {
         labels: ['Power BI','SQL','Python','Office 365','ETL','Excel'],
         datasets: [{
-            label: 'Habilidades Técnicas',
+            //label: 'Habilidades Técnicas',
             data: [45,30,35,20,25,20],
             backgroundColor: [
                 '#a17073',
