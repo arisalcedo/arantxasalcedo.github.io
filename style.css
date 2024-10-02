@@ -1,8 +1,3 @@
-@font-face {
-  font-family: myFirstFont;
-  src: url(./fonts/Kollektif.ttf);
-}
-
 /* Fondo de formas curvas coloridas */
 .background-curves {
   position: absolute;
@@ -85,9 +80,9 @@ h3 {
   margin-bottom: 10px;
 }
 
-/* Aplicar Kollektif al cuerpo de texto y subtítulos secundarios */
+/* Aplicar Josefin Sans al cuerpo de texto y subtítulos secundarios */
 body, p, .contact-info p {
-  font-family: 'myFirstFont','Kollektif', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 16px;
   line-height: 1.6;
 }
