@@ -65,18 +65,18 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 32px;
+  font-size: 50px;
   margin-bottom: 10px;
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 25px;
   margin-bottom: 15px;
   color: #c7998c; /* Color personalizado para "Data Analyst" */
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 22px;
   margin-bottom: 10px;
 }
 
