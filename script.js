@@ -17,6 +17,11 @@ const skillsChart = new Chart(ctx, {
         }]
     },
     options: {
+        plugins: {
+            legend: {
+                display: false
+            },
+        }
         responsive: true,
         maintainAspectRatio: false,
         onHover: function(event, chartElement) {
