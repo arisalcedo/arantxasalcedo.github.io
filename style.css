@@ -55,8 +55,7 @@
   height: 276px;
   border-radius: 50%;
   object-fit: cover;
-  transform: scaleX(-1);
-  transform: rotate(8.9deg);
+  transform: scaleX(-1), rotate(8.9deg);
 }
 
 /* Títulos y subtítulos en mayúsculas */
