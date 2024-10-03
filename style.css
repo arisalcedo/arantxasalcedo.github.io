@@ -74,6 +74,9 @@ h1, h2, h3 {
   font-size: 60px;
   letter-spacing: 40px; /* Ajustar el espaciado entre letras */
   display: block; /* Cada línea del nombre se comporta como bloque */
+  font-family: 'League Gothic', sans-serif;
+  line-height: 1.2; /* Ajuste de altura de línea */
+  margin: 0; /* Sin márgenes entre líneas */
 }
 
 /* Estilo para evitar margen en "Data Analyst" */
