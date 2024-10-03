@@ -55,6 +55,7 @@
   height: 276px;
   border-radius: 50%;
   object-fit: cover;
+  transform: scaleX(-1);
 }
 
 /* Títulos y subtítulos en mayúsculas */
