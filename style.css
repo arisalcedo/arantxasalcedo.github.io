@@ -72,6 +72,7 @@ h1 {
 
 h2 {
   font-size: 25px;
+  margin-top: 0; /* Evitar espacio entre el nombre y el título */
   margin-bottom: 15px;
   color: #c7998c; /* Color personalizado para "Data Analyst" */
 }
@@ -85,6 +86,8 @@ h3 {
 body, p, .contact-info p {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 16px;
+  margin-top: 0; /* Evitar espacio entre el nombre y el título */
+  margin-bottom: 0px;
   line-height: 1.6;
 }
 
