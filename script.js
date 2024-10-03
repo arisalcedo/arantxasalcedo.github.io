@@ -30,7 +30,7 @@ const skillsChart = new Chart(ctx, {
             datalabels: {
                 color: '#ffffff', // Color blanco para las etiquetas
                 formatter: (value, context) => {
-                    //return context.chart.data.labels[context.dataIndex]; // Mostrar las etiquetas correspondientes
+                    return context.chart.data.labels[context.dataIndex]; // Mostrar las etiquetas correspondientes
                 },
                 font: {
                     weight: 'bold',
@@ -57,7 +57,7 @@ const skillsChart = new Chart(ctx, {
             }
         }
     },
-    plugins: [ChatDatalabels]
+    plugins: [ChartDatalabels]
 });
 
 // Función para mostrar detalles de habilidades
