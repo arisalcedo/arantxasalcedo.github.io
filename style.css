@@ -64,7 +64,27 @@ h1, h2, h3 {
   /*letter-spacing: 0.5px;*/
   text-transform: uppercase;
 }
+/* Estilos para el nombre en tres líneas */
+.name {
+  text-align: right; /* Alineado a la derecha */
+  margin-bottom: 0; /* Eliminar margen inferior */
+}
 
+.name-line {
+  font-size: 60px;
+  letter-spacing: 40px; /* Ajustar el espaciado entre letras */
+  display: block; /* Cada línea del nombre se comporta como bloque */
+}
+
+/* Estilo para evitar margen en "Data Analyst" */
+.no-margin {
+  margin-top: 0; /* Eliminar espacio entre nombre y título */
+  font-size: 30px;
+  color: #c7998c; /* Color personalizado para "Data Analyst" */
+  letter-spacing: 15px; /* Ajustar el espaciado entre letras */
+  text-align: right; /* Alineación a la derecha */
+  margin-bottom: 15px;
+}
 h1 {
   font-size: 60px;
   margin-bottom: 0px;
