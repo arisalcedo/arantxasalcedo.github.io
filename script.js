@@ -57,7 +57,7 @@ const skillsChart = new Chart(ctx, {
             }
         }
     },
-    plugins: [ChartDatalabels]
+    plugins: [ChartDataLabels]
 });
 
 // Función para mostrar detalles de habilidades
