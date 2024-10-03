@@ -40,8 +40,8 @@
 
 /* Fondo circular para la foto */
 .profile-photo-container {
-  width: 160px;
-  height: 160px;
+  width: 276px;
+  height: 276px;
   background-color: #91eee1;
   border-radius: 50%;
   display: flex;
@@ -51,8 +51,8 @@
 }
 
 .profile-photo {
-  width: 140px;
-  height: 140px;
+  width: 276px;
+  height: 276px;
   border-radius: 50%;
   object-fit: cover;
 }
