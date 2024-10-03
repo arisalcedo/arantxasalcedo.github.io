@@ -56,7 +56,7 @@
   border-radius: 50%;
   object-fit: cover;
   transform: scaleX(-1);
-  transform: rotate(10deg)
+  transform: rotate(8.9deg);
 }
 
 /* Títulos y subtítulos en mayúsculas */
