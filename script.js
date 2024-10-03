@@ -56,7 +56,8 @@ const skillsChart = new Chart(ctx, {
                 document.getElementById('skill-details').innerHTML = ''; // Limpiar los detalles si no hay hover
             }
         }
-    }
+    },
+    plugins: [ChatDatalabels]
 });
 
 // Función para mostrar detalles de habilidades
