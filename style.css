@@ -66,18 +66,18 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 60px;
   margin-bottom: 0px;
   line-height: 1;
-  letter-spacing: 161;
+  letter-spacing: 161px;
 }
 
 h2 {
-  font-size: 25px;
+  font-size: 30px;
   margin-top: 0; /* Evitar espacio entre el nombre y el título */
   margin-bottom: 15px;
   color: #c7998c; /* Color personalizado para "Data Analyst" */
-  letter-spacing: 161;
+  letter-spacing: 161px;
 }
 
 h3 {
