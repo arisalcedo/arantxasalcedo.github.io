@@ -20,21 +20,24 @@ const skillsChart = new Chart(ctx, {
         }]
     },
     options: {
-        plugins: {
+        plugins:  {
+            tooltip: {
+                enabled: false //sin tooltip
+            },
             legend: {
                 display: false // Deshabilita la leyenda
             },
             datalabels: {
                 color: '#ffffff', // Color blanco para las etiquetas
                 formatter: (value, context) => {
-                    return context.chart.data.labels[context.dataIndex]; // Mostrar las etiquetas correspondientes
+                    //return context.chart.data.labels[context.dataIndex]; // Mostrar las etiquetas correspondientes
                 },
                 font: {
                     weight: 'bold',
                     size: 14 // Tamaño de letra de las etiquetas
                 }
             }
-        },
+        }, 
         responsive: true,
         maintainAspectRatio: false,
         layout: {
