@@ -68,6 +68,7 @@ h1, h2, h3 {
 .name {
   text-align: right; /* Alineado a la derecha */
   margin-bottom: 0; /* Eliminar margen inferior */
+  font-family: 'League Gothic', sans-serif;
 }
 
 .name-line {
@@ -87,6 +88,7 @@ h1, h2, h3 {
   letter-spacing: 15px; /* Ajustar el espaciado entre letras */
   text-align: right; /* Alineación a la derecha */
   margin-bottom: 15px;
+  font-family: 'League Gothic', sans-serif;
 }
 h1 {
   font-size: 60px;
