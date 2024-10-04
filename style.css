@@ -70,6 +70,7 @@ h1 {
   margin-bottom: 0px;
   line-height: 1;
   letter-spacing: 40px;
+  margin-right: -40px;
 }
 
 h2 {
@@ -78,6 +79,7 @@ h2 {
   margin-bottom: 15px;
   color: #c7998c; /* Color personalizado para "Data Analyst" */
   letter-spacing: 15px;
+  margin-right: -15px;
 }
 
 h3 {
